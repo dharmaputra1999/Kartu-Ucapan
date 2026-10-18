@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Birthday</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body 
+        style="
+        background-image: url(https://plus.unsplash.com/premium_photo-1676068243733-df1880c2aef8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        "
+class="flex justify-center h-screen items-center"
+>
+
+<div class="bg-white border px-10 py-5 border-4 border-gray-300 shadow-lg shadow-black-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-90" 
+id="kartu"
+>
+    <h1 class="text-3xl">HAPPY BIRTHDAY</h1>
+    <h1 class="text-2xl font-bold animate__animated animate__pulse animate__infinite">I GUSTI AYU YESY WIRAYANTI</h1>
+    <button class="p-2 bg-yellow-200 rounded mt-5 hover:bg-yellow-300 transition ease-in w-full animate__animated animate__delay-1s animate__tada" 
+    onclick="ubahKartu()"
+    >
+    Klik disini cantik!
+    </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.2.0/dist/confetti.min.js"></script>
+<script>
+    confetti({
+    position: { x: 10, y: 10 },	// Origin position
+    count: 100,			// Number of particles
+    size: 1,			// Size of the particles
+    velocity: 200,		// Initial particle velocity
+    fade: false			// Particles fall off the screen, or fade out
+    });
+    let kartu = document.getElementById('kartu');
+    function ubahKartu(){
+        kartu.innerHTML = '  <h1 class="font-semibold text-wrap animate__animated animate__zoomIn"> Happy Bridthday Tiayu Yesy 🎂 🎉 Anjay udah diumur 26 thn tiayu, Semoga diumur yang sekarang ini semua hal baik selalu bertadatangan tiayu entah itu dari hal kecil maupun hal besar tiayu, tingurah salut ajak tiayu dari banyaknya rintangan yang tiayu lalui, tiayu masih kuat, tegar dan tidak menyerah melewati semua itu walaupun tidak semua rintangan yang tiayu lalui tingurah uning cuman dari sedikit cerita dari tiayu tingurah sudah mengerti tiayu. Ingat tiayu, tiayu tidak sendirian ada temen ada tingurah yang bisa mendengarkan keluhkesah tiayu. Astungkara diumur sekarang tiayu diberikan umur panjang, kesehatan dan kebahagian yang melipah tiayu🙏 Heheheh sekian ucapan ultah dari tingurah tiayu maaf jika kurang bagus dalam menyusun kalimat kwkwkwk tiayu uningkan tingruah sai typo kwkwkw 😁 </h1> <button class="p-2 bg-yellow-200 rounded mt-5 hover:bg-yellow-300 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="refresh()" > Klik disini cantik! </button>';
+        }
+            function refresh(){
+                location.reload();
+        }   
+</script>
+</body>
+</html> 
